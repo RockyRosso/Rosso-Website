@@ -1,0 +1,216 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    font-family: 'Fredoka One', cursive;
+}
+
+/* Variables */
+
+:root {
+    --section-button-color: green;
+    --section-text-button-color: white;
+}
+
+.light {
+    --bg: rgb(211, 211, 211);
+    --section-color: #ffff;
+    --sub-text: black;
+    --text: black;
+    --link-color: #e6e6e6;
+}
+
+.dark {
+    --bg: #242323;
+    --section-color: #1d1c1c;
+    --text: white;
+    --text-hover: rgb(216, 214, 214);
+    --button-color: #131212;
+    --link-color: #5c5c5c;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+/* Header */
+
+#header-footer {
+    background-color: var(--bg);
+    box-shadow: 0px -1px 10px inset;
+    padding: 10px;
+    margin: 0;
+    min-height: 10vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#header-footer-content {
+    position: relative;
+    top: 13px;
+}
+
+.top-btn {
+    background-color: transparent;
+    color: var(--text);
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: ease 0.2s;
+    /*box-shadow: 0 2px 6px 0 rgba(0,0,0,0.24);*/
+    position: relative;
+    top: -25px;
+}
+
+.top-btn:hover {
+    transition: ease 0.2s;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.24);
+    background-color: var(--link-color);
+}
+
+.settings-button {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    overflow: hidden;
+    background: transparent;
+    color: var(--text);
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.settings-icon {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Settings hover */
+
+.settings-button:hover {
+    color: var(--text-hover);
+}
+
+/* Page Wrapper */
+
+.page-wrapper {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+}
+
+.content {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    inline-size: 700px;
+}
+
+.blog-header {
+    color: var(--text);
+    text-align: center;
+}
+
+.blog-image {
+    border: 10px solid #131212;
+    border-radius: 20px;
+}
+
+p {
+    color: var(--text);
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+
+.blog-link {
+    color: var(--text);
+    font-family: sans-serif;
+}
+
+/* Settings prompt */
+
+.prompts {
+    position: absolute;
+    left: 100%;
+    transform: translate(-105%);
+    display: grid;
+    place-items: end;
+}
+
+.settings-prompt {
+    display: grid;
+    list-style: none;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--bg);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+}
+
+.settings-prompt.hide {
+    animation: fadeOut ease 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.settings-prompt.show {
+    animation: fadeIn ease 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.settings-text {
+    color: var(--text);
+}
+
+/* Theme buttons */
+
+.dark-button {
+    position: absolute;
+}
+
+.light-button {
+    visibility: hidden;
+}
+
+.dark-button, .light-button {
+    cursor: pointer;
+    background: transparent;
+    border: hidden;
+}
+
+.dark-icon, .light-icon {
+    color: white;
+}
+
+.dark-button.show-dark {
+    visibility: visible;
+}
+
+.dark-button.hide-dark {
+    visibility: hidden;
+}
+
+.light-button.show-light {
+    visibility: visible;
+}
+
+.light-button.hide-light {
+    visibility: hidden;
+}
