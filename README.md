@@ -6,4 +6,4 @@ Rosso Website is a website to show off Rocky Rosso's projects on Roblox, or outs
 - W3 Schools (Help with HTML and CSS)
 - Google Fonts (Site Fonts)
 ---
-https://site.rocky-rosso.xyz
+https://rocky-rosso.xyz
