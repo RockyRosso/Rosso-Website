@@ -10,6 +10,18 @@ body {
     background-color: #242323;
 }
 
+/* Text selection color */
+
+::-moz-selection {
+    color: white;
+    background: #0055c9;
+}
+  
+::selection {
+    color: white;
+    background: #0055c9;
+}
+
 /* 404 */
 
 .error {

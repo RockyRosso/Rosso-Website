@@ -7,6 +7,9 @@ const Body = document.body;
 const Settings_Button = document.querySelector('.settings-button');
 const Settings_Prompt = document.querySelector('.settings-prompt');
 
+const Cookie_Concent = document.querySelector('.cookie-consent');
+const Cookie_Button = document.querySelector('.cookie-button');
+
 let isOpen = false;
 
 //
@@ -54,6 +57,7 @@ if (Theme) {
     console.log('Theme is not null')
     Body.classList.replace('dark', Theme);
 
+    // Check for theme //
     if (Theme === 'dark') {
         Light_Button.classList.remove('show-light');
         Light_Button.classList.add('hide-light');
@@ -67,6 +71,17 @@ if (Theme) {
         Dark_Button.classList.remove('show-dark');
         Dark_Button.classList.add('hide-dark');
     }
+}
+
+//
+
+// Check for cookie
+
+const Cookie_Consent_Cookie = getCookie('consent-clicked');
+console.log(Cookie_Consent_Cookie)
+
+if (Cookie_Consent_Cookie === '' ) {
+  Cookie_Concent.classList.add('show');
 }
 
 //
@@ -117,5 +132,13 @@ Settings_Button.onclick = () => {
     isOpen = true;
   }
 }
+
+// Cookie consent //
+Cookie_Button.onclick = () => {
+  Cookie_Concent.classList.remove('show');
+
+  // Set cookie //
+  setCookie('consent-clicked', 'clicked', 365);
+};
 
 //

@@ -34,6 +34,18 @@ body {
     background-color: var(--bg);
 }
 
+/* Text selection color */
+
+::-moz-selection {
+    color: white;
+    background: #0055c9;
+}
+  
+::selection {
+    color: white;
+    background: #0055c9;
+}
+
 /* Header */
 
 #header-footer {
@@ -111,6 +123,49 @@ p {
 .blog-link {
     color: var(--text);
     font-family: sans-serif;
+}
+
+/* Cookie Consent */
+
+.cookie-consent {
+    position: fixed;
+    bottom: 0.3em;
+    background-color: var(--section-color);
+    max-width: 365px;
+    padding: 2em;
+    font-size: 20px;
+    z-index: 10000;
+    border-radius: 20px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cookie-button {
+    background-color: var(--section-button-color);
+    color: var(--section-text-button-color);
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 200ms ease;
+}
+
+.cookie-button:hover {
+    transform: scale(1.1);
+}
+
+.cookie-consent.show {
+    transition: 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+header {
+    color: var(--text);
+    font-size: 30px;
 }
 
 /* Settings prompt */
