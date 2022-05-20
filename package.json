@@ -1,0 +1,25 @@
+{
+  "name": "rosso-website",
+  "version": "1.0.0",
+  "description": "Rosso Website is a website to show off Rocky Rosso's projects on Roblox, or outside of it. It contains blogs, a gallery of projects, and more coming soon such as a chat room, etc. This site is purely a passion project. So no microtransactions will ever be implemented into the site. Have fun exploring!\r ## Acknowledgements\r - Netlify (Hosting)\r - W3 Schools (Help with HTML and CSS)\r - Google Fonts (Site Fonts)\r ---\r https://rocky-rosso.xyz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RockyRosso/Rosso-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RockyRosso/Rosso-Website/issues"
+  },
+  "homepage": "https://github.com/RockyRosso/Rosso-Website#readme",
+  "devDependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

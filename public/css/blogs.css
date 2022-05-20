@@ -19,6 +19,7 @@
     --sub-text: black;
     --text: black;
     --link-color: #e6e6e6;
+    --bar-color: black;
 }
 
 .dark {
@@ -28,6 +29,7 @@
     --text-hover: rgb(216, 214, 214);
     --button-color: #131212;
     --link-color: #5c5c5c;
+    --bar-color: white;
 }
 
 body {
@@ -88,6 +90,74 @@ body {
     background-color: var(--link-color);
 }
 
+.settings-button {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    overflow: hidden;
+    background: transparent;
+    color: var(--text);
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.settings-icon {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Settings hover */
+
+.settings-button:hover {
+    color: var(--text-hover);
+}
+
+/* Settings prompt */
+
+.prompts {
+    position: absolute;
+    left: 100%;
+    transform: translate(-105%);
+    display: grid;
+    place-items: end;
+}
+
+.settings-prompt {
+    display: grid;
+    list-style: none;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--bg);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    visibility: hidden;
+}
+
+.settings-prompt.hide {
+    animation: fadeOut ease 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+.settings-prompt.show {
+    animation: fadeIn ease 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+.settings-text {
+    color: var(--text);
+}
+
 /* Page Wrapper */
 
 .page-wrapper {
@@ -100,17 +170,12 @@ body {
 .content {
     padding-top: 10px;
     padding-bottom: 50px;
-    inline-size: 700px;
+    inline-size: 500px;
 }
 
 .blog-header {
     color: var(--text);
     text-align: center;
-}
-
-.blog-image {
-    border: 10px solid #131212;
-    border-radius: 20px;
 }
 
 p {
@@ -242,4 +307,135 @@ header {
 
 .light-button.hide-light {
     visibility: hidden;
+}
+
+/* Mobile menu */
+
+.mobile-button {
+    position: absolute;
+    visibility: hidden;
+}
+
+/* Media */
+
+@media only screen and (max-width: 430px) {
+    .links-title {
+        width: 300px;
+    }
+}
+
+.mobile-menu {
+    position: absolute;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 610px) {
+    #header-footer {
+        display: none;
+        position: absolute;
+    }
+
+    .mobile-button {
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: fixed;
+        top: 2%;
+        
+        transform: translate(5%, 20%);
+        color: var(--bar-color);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        z-index: 150;
+    }
+
+    .prompts {
+        display: none;
+    }
+
+    .mobile-menu-content {
+        position: relative;
+        top: 80px;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: fixed;
+        background-color: var(--section-color);
+        height: 100%;
+        max-width: 80%;
+        width: 350px;
+        overflow-y: auto;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    .mobile-menu.toggle {
+        visibility: visible;
+    }
+
+    .mobile-menu-button {
+        list-style: none;
+    }
+
+    .mobile-menu-item {
+        margin: 10px 10px;
+        padding: 10px 12px;
+        font-size: 30px;
+        color: var(--text);
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    .mobile-menu-button, .mobile-menu-item {
+        margin: 20px 0;
+    }
+
+    .mobile-menu-item:hover {
+        transition: ease 0.2s;
+        box-shadow: 0 2px 6px 0 rgba(0,0,0,0.24);
+        background-color: var(--link-color);
+    }
+
+    .mobile-menu-icon {
+        margin-top: 20px;
+    }
+
+    .mobile-menu-theme {
+        position: relative;
+        left: 10%;
+        width: 50%;
+    }
+
+    .mobile-menu-dark, .mobile-menu-light {
+        position: absolute;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        visibility: hidden;
+    }
+
+    .light-icon, .dark-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    h2 {
+        color: var(--text);
+    }
+
+    /* Mobile button events */
+
+    .mobile-menu-dark.toggle {
+        visibility: visible;
+    }
+
+    .mobile-menu-light.toggle {
+        visibility: visible;
+    }
 }
