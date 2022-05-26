@@ -1,4 +1,5 @@
 node_modules
-src
 dist
 package-lock.json
+src/template.html
+public
