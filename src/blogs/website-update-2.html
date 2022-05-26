@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
 <!--Tab icon-->
-<link rel="icon" type="image/ico" href="media/website_icon.ico" sizes="16x16">
-<link rel="icon" type="image/ico" href="media/website_icon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="../media/website_icon.ico" sizes="16x16">
+<link rel="icon" type="image/png" href="../media/website_icon.ico" sizes="32x32">
 
-<html lang="en">
+<html>
     <head>
         <!--Analytics-->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PD26QVCLQC"></script>
@@ -16,28 +16,29 @@
             gtag('config', 'G-PD26QVCLQC');
         </script>
         
-        <script defer src="js/app.js"></script>
-        <script defer src="js/cookie-consent.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/cookie-consent.js"></script>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
         <meta name="description" content="Rosso Website is a website to show off Rocky Rosso's projects on Roblox, or outside of it. It contains blogs, a gallery of projects, and more coming soon such as a chat room, etc. This site is purely a passion project. So no microtransactions will ever be implemented into the site. Have fun exploring!">
         <meta content="#2075cb" data-react-helmet="true" name="theme-color"/>
         <meta content="https://images.rocky-rosso.xyz/media/rosso_website/website_icon.ico" property="og:image"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-        <title>Blogs - Rosso Website</title>
+        <title>Website Update #2 - Rosso Website</title>
 
         <div class="site-header" id="header-footer">
             <div class="top-content" id="header-footer-content">
-                <img src="media/Rosso_Website_Icon.png" class="links-title" width="400px">
-                <a href="index" class="top-btn">Home</a>
-                <a href="projects" class="top-btn">Projects</a>
-                <a href="blogs" class="top-btn" id="selected">Blogs</a>
-                <a href="https://links.rocky-rosso.xyz" class="top-btn">Socials</a>
+                <img src="../media/Rosso_Website_Icon.png" class="links-title" width="400px">
+                <a href="../index" class="top-btn">Home</a>
+                <a href="../projects" class="top-btn">Projects</a>
+                <a href="../blogs" class="top-btn">Blogs</a>
+                <a href="https://links.rocky-rosso.xyz/rocky-rosso" class="top-btn">Socials</a>
             </div>
 
             <div class="header-content">
@@ -56,15 +57,15 @@
                 <hr class="bar">
                 <ul class="mobile-menu-items">
                     <li class="mobile-menu-button">
-                        <a href="/" class="mobile-menu-item" id="selected">Home</a>
+                        <a href="../" class="mobile-menu-item">Home</a>
                     </li>
 
                     <li class="mobile-menu-button">
-                        <a href="projects" class="mobile-menu-item">Projects</a>
+                        <a href="../projects" class="mobile-menu-item">Projects</a>
                     </li>
 
                     <li class="mobile-menu-button">
-                        <a href="blogs" class="mobile-menu-item">Blogs</a>
+                        <a href="../blogs" class="mobile-menu-item">Blogs</a>
                     </li>
 
                     <li class="mobile-menu-button">
@@ -93,84 +94,45 @@
             </div>
         </div>
 
-        <div class="page-wrapper">
+        <div class="blog-header">
+            <h1>Website Update #2</h1>
+            <img class="blog-image" src="../media/blogs/Website_Update_Icon.jpg" width="300px">
+            <p class="blog-text">Author: <a class="blog-link" href="../profiles/rocky-ross">Rocky Ross</a></p>
+            <hr class="bar">
+        </div>
+
+        <div class="blog-page-wrapper">
             <div class="cookie-consent">
                 <header>Cookie Consent</header>
-                <img src="media/Cookie_Consent.png" width="200px">
+                <img src="../media/Cookie_Consent.png" width="200px">
                 <div class="cookie-content">
                     <p>This website uses cookies for the best experience.</p>
                     <button class="cookie-button">Got It</button>
                 </div>
             </div>
-            <div class="page-content">
-            <h1>Top Blogs</h1>
-            <hr class="bar">
-            <div class="sections">
-                <a class="section-link" href="blogs/website-update-2">
-                    <div class="section">
-                        <div class="camping-grounds">
-                            <div class="section-image">
-                                <img src="media/blogs/Website_Update_Icon.jpg" width="220px">
-                            </div>
-                            <p>Website Update #2</p>
-                            <button class="section-button">READ</button>
-                        </div> 
-                    </div>
-                </a>
-            </div>
-            <hr class="bar">
-            <h1>Blogs</h1>
-            <hr class="bar">
-            <div class="sections">
-                <a class="section-link" href="blogs/new-website">
-                    <div class="section">
-                        <div class="camping-grounds">
-                            <div class="section-image">
-                                <img src="media/blogs/new_website.jpg" width="220px">
-                            </div>
-                            <p>Brand New Website</p>
-                            <button class="section-button">READ</button>
-                        </div> 
-                    </div>
-                </a>
-            </div>
-            <hr class="bar">
-            <h1>Website Update Logs</h1>
-            <hr class="bar">
-            <div class="sections">
-                <a class="section-link" href="blogs/website-update-1">
-                    <div class="section">
-                        <div class="camping-grounds">
-                            <div class="section-image">
-                                <img src="media/blogs/Website_Update_Icon.jpg" width="220px">
-                            </div>
-                            <p>Website Update #1</p>
-                            <button class="section-button">READ</button>
-                        </div> 
-                    </div>
-                </a>
-                <a class="section-link" href="blogs/website-update-2">
-                    <div class="section">
-                        <div class="camping-grounds">
-                            <div class="section-image">
-                                <img src="media/blogs/Website_Update_Icon.jpg" width="220px">
-                            </div>
-                            <p>Website Update #2</p>
-                            <button class="section-button">READ</button>
-                        </div> 
-                    </div>
-                </a>
+            <div class="content">
+                <p class="blog-text">A small update adding minor things:</p>
+                
+                <ul>
+                    <p class="blog-text">- New Project: Connections</p>
+                    <p class="blog-text">- New Profile: Filler Games</p>
+                    <p class="blog-text">- Minor bug fixes</p>
+                    <p class="blog-text">- Front-end JavaScript is now compiled</p>
+                </ul>
+                
+                <p class="blog-text">If you encounter any bugs or website design issues, please contact Rocky Ross.</p>
             </div>
         </div>
+        
 
         <footer>
             <div class="site-header" id="header-footer">
                 <div class="footer-content" id="header-footer-content">
-                    <img src="media/Rosso_Website_Icon.png" class="links-title" width="400px">
-                    <a href="index" class="top-btn">Home</a>
-                    <a href="projects" class="top-btn">Projects</a>
-                    <a href="blogs" class="top-btn" id="selected">Blogs</a>
-                    <a href="https://links.rocky-rosso.xyz" class="top-btn">Socials</a>
+                    <img src="../media/Rosso_Website_Icon.png" class="links-title" width="400px">
+                    <a href="/" class="top-btn">Home</a>
+                    <a href="../projects" class="top-btn">Projects</a>
+                    <a href="../blogs" class="top-btn">Blogs</a>
+                    <a href="https://links.rocky-rosso.xyz/rocky-rosso" class="top-btn">Socials</a>
                 </div>
             </div>
         </footer>
