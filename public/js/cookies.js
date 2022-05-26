@@ -1,1 +1,0 @@
-(()=>{let e=document.body;const t=function(e){let t="theme=",n=decodeURIComponent(document.cookie).split(";");for(let e=0;e<n.length;e++){let o=n[e];for(;" "==o.charAt(0);)o=o.substring(1);if(0==o.indexOf(t))return o.substring(t.length,o.length)}return""}();t&&e.classList.replace("dark",t)})();
