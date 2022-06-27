@@ -103,7 +103,6 @@ h1 {
     text-decoration: none;
     display: inline-block;
     font-size: 25px;
-    width: 100px;
     border-radius: 10px;
     margin: 10px;
     transition: ease 0.2s;
@@ -234,6 +233,15 @@ header {
 
 /* Sections */
 
+.title-section {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 50px;
+}
+
 p {
     color: var(--text);
 }
@@ -296,6 +304,38 @@ p {
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24);
 }
 
+/* Video Section */
+
+.section-video {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    margin-bottom: 26px;
+}
+
+.video-section {
+    color: var(--text);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: var(--section-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 320px;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    min-width: 250px;
+    max-width: 450px;
+}
+
+iframe {
+    aspect-ratio: 16/9;
+}
+
 /* Settings prompt */
 
 .prompts {
@@ -340,27 +380,34 @@ p {
 
 /* Announcement banner */
 
-.announcement-banner {
-    position: relative;
+.announce-container {
+    position: absolute;
     text-align: center;
-    height: 157px;
-    background-color: var(--section-color);
     width: 100%;
+    height: 200px;
+    background-color: var(--section-color);
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    visibility: hidden;
 }
 
-.announcement-button {
+.announce-content {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    max-width: 700px;
+}
+
+.announce-button {
     background-color: var(--section-button-color);
+    color: var(--section-text-button-color);
     border: none;
     border-radius: 10px;
-    color: white;
-    font-size: 20px;
+    height: 40px;
     width: 100px;
-    height: 50px;
     cursor: pointer;
-}
-
-.announcement-icon {
-    
 }
 
 /* Profile */

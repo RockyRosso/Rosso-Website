@@ -33,11 +33,11 @@
 
         <div class="site-header" id="header-footer">
             <div class="top-content" id="header-footer-content">
-                <img src="media/Rosso_Website_Icon.png" class="links-title" width="400px">
+                <img src="media/titles/Projects.png" class="links-title" width="240px">
                 <a href="index" class="top-btn">Home</a>
                 <a href="projects" class="top-btn" id="selected">Projects</a>
                 <a href="blogs" class="top-btn">Blogs</a>
-                <a href="https://links.rocky-rosso.xyz/rocky-rosso" class="top-btn">Socials</a>
+                <a href="showcases" class="top-btn">Showcases</a>
             </div>
 
             <div class="header-content">
@@ -46,6 +46,57 @@
         </div>
     </head>
     <body class="dark">
+
+        <noscript>
+            <style>
+                div {
+                    overflow: hidden;
+                    width: 300px;
+                    height: 100px;
+                }
+
+                .nojs-page {
+                    position: absolute;
+                    background-color: white;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000000;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                }
+
+                .nojs-container {
+                    position: relative;
+                    background-color: rgb(206, 206, 206);
+                    height: 290px;
+                    width: 500px;
+                    top: 50%;
+                    transform: translate(0%, -50%);
+                    border-radius: 10px;
+                }
+
+                h1 {
+                    color: black;
+                }
+                
+                p {
+                    color: black;
+                }
+            </style>
+
+            <div class="nojs-page">
+                <div class="nojs-container">
+                    <img src="media/R_Error.png" width="100px">
+                    <h1>JavaScript Required</h1>
+                    <p>This website requires JavaScript in order to work properly. Please enable JavaScript for this site.</p>
+                </div>
+            </div>
+        </noscript>
+        
         <button class="mobile-button" id="mobile-menu">
             <i class="fa-solid fa-bars fa-3x"></i>
         </button>
@@ -54,13 +105,15 @@
 
             <div class="mobile-menu-content">
                 <hr class="bar">
+                <img src="media/titles/Projects.png" width="240px">
+                <hr class="bar">
                 <ul class="mobile-menu-items">
                     <li class="mobile-menu-button">
-                        <a href="/" class="mobile-menu-item" id="selected">Home</a>
+                        <a href="/" class="mobile-menu-item">Home</a>
                     </li>
 
                     <li class="mobile-menu-button">
-                        <a href="projects" class="mobile-menu-item">Projects</a>
+                        <a href="projects" class="mobile-menu-item" id="selected">Projects</a>
                     </li>
 
                     <li class="mobile-menu-button">
@@ -68,7 +121,7 @@
                     </li>
 
                     <li class="mobile-menu-button">
-                        <a href="https://links.rocky-rosso.xyz" class="mobile-menu-item">Socials</a>
+                        <a href="showcases" class="top-btn">Showcases</a>
                     </li>
                 </ul>
 
@@ -227,11 +280,11 @@
         <footer>
             <div class="site-header" id="header-footer">
                 <div class="footer-content" id="header-footer-content">
-                    <img src="media/Rosso_Website_Icon.png" class="links-title" width="400px">
+                    <img src="media/titles/Projects.png" class="links-title" width="240px">
                     <a href="index" class="top-btn">Home</a>
                     <a href="projects" class="top-btn" id="selected">Projects</a>
                     <a href="blogs" class="top-btn">Blogs</a>
-                    <a href="https://links.rocky-rosso.xyz/rocky-rosso" class="top-btn">Socials</a>
+                    <a href="showcases" class="top-btn">Showcases</a>
                 </div>
             </div>
         </footer>

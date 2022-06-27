@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/RockyRosso/Rosso-Website#readme",
   "devDependencies": {
-    "webpack": "^5.72.1",
+    "webpack": "^5.73.0",
     "webpack-cli": "^4.9.2"
   }
 }

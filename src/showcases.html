@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
 <!--Tab icon-->
-<link rel="icon" type="image/png" href="../media/website_icon.ico" sizes="16x16">
-<link rel="icon" type="image/png" href="../media/website_icon.ico" sizes="32x32">
+<link rel="icon" type="image/ico" href="media/website_icon.ico" sizes="16x16">
+<link rel="icon" type="image/ico" href="media/website_icon.ico" sizes="32x32">
 
-<html>
+<html lang="en">
     <head>
         <!--Analytics-->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PD26QVCLQC"></script>
@@ -16,8 +16,8 @@
             gtag('config', 'G-PD26QVCLQC');
         </script>
 
-        <script defer src="../js/app.js"></script>
-        <script defer src="../js/cookie-consent.js"></script>
+        <script defer src="js/app.js"></script>
+        <script defer src="js/cookie-consent.js"></script>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,18 +26,18 @@
         <meta content="https://images.rocky-rosso.xyz/media/rosso_website/website_icon.ico" property="og:image"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-        <title>Runn Studios - Rosso Website</title>
+        <title>Showcases - Rosso Website</title>
 
         <div class="site-header" id="header-footer">
             <div class="top-content" id="header-footer-content">
-                <img src="../media/Rosso_Website_Icon.png" class="links-title" width="400px">
-                <a href="../" class="top-btn">Home</a>
-                <a href="../projects" class="top-btn">Projects</a>
-                <a href="../blogs" class="top-btn">Blogs</a>
-                <a href="https://links.rocky-rosso.xyz/rocky-rosso" class="top-btn">Socials</a>
+                <img src="media/titles/Showcases.png" class="links-title" width="320px">
+                <a href="index" class="top-btn">Home</a>
+                <a href="projects" class="top-btn">Projects</a>
+                <a href="blogs" class="top-btn">Blogs</a>
+                <a href="showcases" class="top-btn" id="selected">Showcases</a>
             </div>
 
             <div class="header-content">
@@ -105,21 +105,23 @@
 
             <div class="mobile-menu-content">
                 <hr class="bar">
+                <img src="media/titles/Showcases.png" width="240px">
+                <hr class="bar">
                 <ul class="mobile-menu-items">
                     <li class="mobile-menu-button">
-                        <a href="../index" class="mobile-menu-item">Home</a>
+                        <a href="/" class="mobile-menu-item">Home</a>
                     </li>
 
                     <li class="mobile-menu-button">
-                        <a href="../projects" class="mobile-menu-item">Projects</a>
+                        <a href="projects" class="mobile-menu-item">Projects</a>
                     </li>
 
                     <li class="mobile-menu-button">
-                        <a href="../blogs" class="mobile-menu-item">Blogs</a>
+                        <a href="blogs" class="mobile-menu-item">Blogs</a>
                     </li>
 
                     <li class="mobile-menu-button">
-                        <a href="https://links.rocky-rosso.xyz" class="mobile-menu-item">Socials</a>
+                        <a href="showcases" class="top-btn" id="selected">Showcases</a>
                     </li>
                 </ul>
 
@@ -144,35 +146,87 @@
             </div>
         </div>
 
+        <div class="title-section">
+            <h1 class="title">Showcases</h1>
+        </div>
+
+        <hr class="bar">
+
         <div class="page-wrapper">
             <div class="cookie-consent">
                 <header>Cookie Consent</header>
-                <img src="../media/Cookie_Consent.png" width="200px">
+                <img src="media/Cookie_Consent.png" width="200px">
                 <div class="cookie-content">
                     <p>This website uses cookies for the best experience.</p>
                     <button class="cookie-button">Got It</button>
                 </div>
             </div>
 
-            <div class="profile">
-                <h1>Runn Studios</h1>
-
-                <div class="profile-content">
-                    <div class="profile-pfp">
-                        <img class="pfp" src="../media/profiles/runn_studios_profile.png" width="200px">
+            <div class="page-content">
+                <div class="sections">
+                    <div class="video-section">
+                        <div class="section-content">
+                            <div class="section-video">
+                                <iframe width="100%" height="230" src="https://www.youtube.com/embed/bZphypk4u3s" title="Tower Defense - Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h4>Tower Defense Game</h4>
+                        </div>
                     </div>
-                    <div class="profile-about">
-                        <h3>Buying our T-Shirts will give you credit in the game for contributing by funding the Dev Team. Once the game goes public this will not take effect anymore. A Group that has been making Games since May 5th 2021 Join Server TF 63 dJqhGH (without spaces)</h3>
+                    <div class="video-section">
+                        <div class="section-content">
+                            <div class="section-video">
+                                <iframe width="100%" height="230" src="https://www.youtube.com/embed/t9s6S8IkIQI" title="AI - Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h4>AI</h4>
+                        </div>
                     </div>
-
-                    <hr class="bar">
-
-                    <h2>Socials</h2>
-
-                    <div class="profile-socials">
-                        <a href="https://www.roblox.com/groups/9328410/Runn-Studios#!/about" class="profile-social">Roblox Group</a>
-                        <a href="https://discord.gg/TF63dJqhGH" class="profile-social">Discord Server</a>
-                        <a href="https://twitter.com/RunnStudios" class="profile-social">Twitter</a>
+                    <div class="video-section">
+                        <div class="section-content">
+                            <div class="section-video">
+                                <iframe width="100%" height="230" src="https://www.youtube.com/embed/VsyecyMs6LY" title="Discord Bot 1 - Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h4>Discord Bot 1</h4>
+                        </div>
+                    </div>
+                    <div class="video-section">
+                        <div class="section-content">
+                            <div class="section-video">
+                                <iframe width="100%" height="230" src="https://www.youtube.com/embed/4C09iuaWYSo" title="Discord Bot 2 - Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h4>Discord Bot 2</h4>
+                        </div>
+                    </div>
+                    <div class="video-section">
+                        <div class="section-content">
+                            <div class="section-video">
+                                <iframe width="100%" height="230" src="https://www.youtube.com/embed/FesaosihQoI" title="Discord Bot 3 - Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h4>Discord Bot 3</h4>
+                        </div>
+                    </div>
+                    <div class="video-section">
+                        <div class="section-content">
+                            <div class="section-video">
+                                <iframe width="100%" height="230" src="https://www.youtube.com/embed/IfVnePgvTCU" title="Discord Bot 4 - Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h4>Discord Bot 4</h4>
+                        </div>
+                    </div>
+                    <div class="video-section">
+                        <div class="section-content">
+                            <div class="section-video">
+                                <iframe width="100%" height="230" src="https://www.youtube.com/embed/fzmQ5UaIT3Q" title="2D Platormer - Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h4>2D Platformer</h4>
+                        </div>
+                    </div>
+                    <div class="video-section">
+                        <div class="section-content">
+                            <div class="section-video">
+                                <iframe width="100%" height="230" src="https://www.youtube.com/embed/iV_BhVFsjQk" title="Platformer Movement - Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h4>Platformer Movement</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,11 +235,11 @@
         <footer>
             <div class="site-header" id="header-footer">
                 <div class="footer-content" id="header-footer-content">
-                    <img src="../media/Rosso_Website_Icon.png" class="links-title" width="400px">
-                    <a href="../index" class="top-btn">Home</a>
-                    <a href="../projects" class="top-btn">Projects</a>
-                    <a href="../blogs" class="top-btn">Blogs</a>
-                    <a href="https://links.rocky-rosso.xyz/rocky-rosso" class="top-btn">Socials</a>
+                    <img src="media/titles/Showcases.png" class="links-title" width="320px">
+                    <a href="index" class="top-btn">Home</a>
+                    <a href="projects" class="top-btn">Projects</a>
+                    <a href="blogs" class="top-btn">Blogs</a>
+                    <a href="showcases" class="top-btn" id="selected">Showcases</a>
                 </div>
             </div>
         </footer>
